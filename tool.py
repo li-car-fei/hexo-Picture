@@ -130,8 +130,8 @@ def handle_photo():
     list_info.reverse()  # 翻转
     final_dict = {"list": list_info}
 
-    with open("F:\\vscode_workspace\\janche.github.io\\source\\photos\\data.json","w") as fp:
-        json.dump(final_dict, fp)
+    with open("D:/Hexo/source/photos/data.json","w",encoding='utf-8') as fp:
+        json.dump(final_dict, fp,ensure_ascii=False)
 
 def cut_photo():
     """裁剪算法
